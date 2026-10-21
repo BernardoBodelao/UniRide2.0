@@ -1,0 +1,80 @@
+/* Tokens do design system do UniRide.
+   Fontes auto-hospedadas (SIL OFL, ver src/assets/fonts): o sistema não depende de serviço externo. */
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("../assets/fonts/BricolageGrotesque-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/InstrumentSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../assets/fonts/InstrumentSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Tipografia: Bricolage Grotesque para marca, títulos e horários; Instrument Sans para interface. */
+  --font-text: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Bricolage Grotesque", "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Paleta base (contrastes conferidos: texto >= 4.5:1, bordas de campo >= 3:1) */
+  --navy-950: #081b33;
+  --navy-900: #0d2a4a;
+  --navy-700: #1d4a7a;
+  --green-800: #086350;
+  --green-700: #0a7a62;
+  --green-400: #2fd0a0;
+  --green-100: #ddf3ea;
+  --amber-900: #6b4200;
+  --amber-500: #f2a81d;
+  --amber-100: #fff0cf;
+  --red-700: #b3261e;
+  --red-100: #fbe5e3;
+
+  /* Papéis semânticos */
+  --paper: #f1f5f2;
+  --surface: #ffffff;
+  --sunken: #e7eeea;
+  --line: #d3ddd7;
+  --line-strong: #74887e;
+  --text: var(--navy-900);
+  --text-muted: #4a5e73;
+  --text-subtle: #586a7d;
+  --action: var(--green-700);
+  --action-hover: var(--green-800);
+  --focus: var(--navy-700);
+
+  /* Escala de espaçamento (base 4px) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+
+  /* Raios com hierarquia: campos/botões, cartões, painéis grandes */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --shadow-pop: 0 8px 24px rgb(8 27 51 / 0.2);
+
+  --page-max: 68rem;
+  --header-h: 4rem;
+  --bottom-nav-h: 4.25rem;
+}

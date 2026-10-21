@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Banco de dados local (criado automaticamente ao iniciar o backend)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Variáveis de ambiente locais (os arquivos .env.example continuam versionados)
+.env
+.env.local
+.env.*.local
+
+# Frontend
+node_modules/
+dist/
+coverage/
+
+# Logs e temporários
+*.log
+npm-debug.log*
+*.tmp
+
+# Editores e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
